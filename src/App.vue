@@ -46,8 +46,15 @@ export default {
 </script>
 
 <style>
-  *{margin: 0;padding: 0;}
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+  *{margin: 0;padding: 0; }
+  body{font-family: 'NanumSquare',san-serif; font-size:17px; line-height:1.5;}
   ul,li{list-style: none;}
   a:link,a:visited{text-decoration: none;color: #333;}
   .container{width: 1280px;margin: 0 auto;}
+  .nanumsquare {font-family: 'NanumSquare', sans-serif !important;}
+  .fontL{font-weight: 300;}
+  .fontR{font-weight: 400;}
+  .fontB{font-weight: 700;}
+  .fontEB{font-weight: 800;}
 </style>
