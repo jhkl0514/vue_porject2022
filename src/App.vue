@@ -1,26 +1,53 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MainMenu></MainMenu>
+  <MainSlide></MainSlide>
+  <MainBanner></MainBanner>
+  <MainEducation></MainEducation>
+  <MainGraph></MainGraph>
+  <MainNews></MainNews>
+  <MainNotice></MainNotice>
+  <MainMovie></MainMovie>
+  <MainSponsor></MainSponsor>
+  <MainNewsletter></MainNewsletter>
+  <MainFooter></MainFooter>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainMenu from "@/components/Main01Menu.vue"
+import MainSlide from "@/components/Main02Slide.vue"
+import MainBanner from "@/components/Main03Banner.vue"
+import MainEducation from "@/components/Main04Education.vue"
+import MainGraph from "@/components/Main05Graph.vue"
+import MainNews from "@/components/Main06News.vue"
+import MainNotice from "@/components/Main07Notice.vue"
+import MainMovie from "@/components/Main08Movie.vue"
+import MainSponsor from "@/components/Main09Sponsor.vue"
+import MainNewsletter from "@/components/Main10Newsletter.vue"
+import MainFooter from "@/components/Main11Footer.vue"
+
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    MainMenu,
+    MainSlide,
+    MainBanner,
+    MainEducation,
+    MainGraph,
+    MainNews,
+    MainNotice,
+    MainMovie,
+    MainSponsor,
+    MainSponsor,
+    MainNewsletter,
+    MainFooter,
+  },
 }
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style>
+  *{margin: 0;padding: 0;}
+  ul,li{list-style: none;}
+  a:link,a:visited{text-decoration: none;color: #333;}
+  .container{width: 1280px;margin: 0 auto;}
 </style>
