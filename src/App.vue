@@ -1,6 +1,6 @@
 <template>
   <MainMenu></MainMenu>
-  <MainSlide></MainSlide>
+  <MainSlide  v-bind:Main02Slide="Main02Slide"></MainSlide>
   <MainBanner></MainBanner>
   <MainEducation></MainEducation>
   <MainGraph></MainGraph>
@@ -26,6 +26,8 @@ import MainSponsor from "@/components/Main09Sponsor.vue"
 import MainNewsletter from "@/components/Main10Newsletter.vue"
 import MainFooter from "@/components/Main11Footer.vue"
 
+import Main02Slide from "@/data/01mainSlide.js";
+
 
 export default {
   components: {
@@ -42,6 +44,11 @@ export default {
     MainNewsletter,
     MainFooter,
   },
+  data(){
+    return {
+    Main02Slide:Main02Slide,
+    }
+  }
 }
 </script>
 
