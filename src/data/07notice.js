@@ -4,7 +4,8 @@
 
 export default [
 	{
-	  title:"[2차모집] 씨티-JA 여대생 특별한 JOB담 in 핀테크",
+  name:"모집중",
+	title:"[2차모집] 씨티-JA 여대생 특별한 JOB담 in 핀테크",
   s_src: "img1.png",
 			 b_src: "img1_b.jpg",
   target: "여대생",
@@ -15,7 +16,8 @@ export default [
   subcontent:"",
 	},
   {
-	  title:"[2차모집] 씨티-JA 여대생 특별한 JOB담 in 핀테크",
+  name:"모집중",
+	title:"[2차모집] 씨티-JA 여대생 특별한 JOB담 in 핀테크",
   s_src: "img2.png",
 			 b_src: "img2_b.png",
   target: "전국 17~19세 청소년 / 고등학교 재학생, 학교밖청소년 40명",
@@ -26,7 +28,8 @@ export default [
   subcontent:"",
 	},  
   {
-	  title:"[삼성 주니어 SW 아카데미] AI/SW 교육 체험 부스 (교육기부박람회) 대학생 운영스탭 모집(~9/25)",
+  name:"모집완료",
+	title:"[삼성 주니어 SW 아카데미] AI/SW 교육 체험 부스 (교육기부박람회) 대학생 운영스탭 모집(~9/25)",
   s_src: "img3.jpg",
 			 b_src: "img3.jpg",
   target: "AI/SW 관련 전공 대학생 6명",
@@ -37,6 +40,7 @@ export default [
   subcontent: "제11회 대한민국 교육기부 박람회<br>삼성-JA Korea AI/SW 교육 체험 부스 운영스탭을 모집합니다!<br>삼성과 JA Korea는 소프트웨어 교육의 저변 확대 및 창의 융합 인재 양성을 위하여<br>교육부, 한국과학창의재단 후원으로 [제11회 대한민국 교육기부 박람회]에 참여합니다.<br>이에 소프트웨어에 관심있는 대학생분들의 많은 관심과 참여 부탁드립니다."  
   },
   {
+    name:"모집완료",
 	  title:"2022 아시아발전재단-JA Korea ‘우리가족 즐거운 경제교육’ 프로그램 참가 기관 모집",
   s_src: "img4.jpg",
 			 b_src: "img4_b.jpg",
@@ -48,6 +52,7 @@ export default [
   subcontent: "아시아발전재단 X JA Korea<br>부모와 함께하는 경제교육 “우리가족 즐거운 경제교육” 기관 모집<br>아시아발전재단의 후원으로 진행되는 '우리가족 즐거운 경제교육' 프로그램은<br> 다문화가정 부모님과 자녀가 함께하는 경제/금융 교육을 통해 올바른 소비생활과 시장경제에 대한 인식을 함양하기 위한 프로그램입니다."
 	},
   {
+    name:"모집완료",
 	  title:"[강사모집] 미래 리더를 위한 여중생 자립심 향상 프로그램 'Goal' 강사 모집",
   s_src: "img5.jpg",
 			 b_src: "img5_b.png",
@@ -59,6 +64,7 @@ export default [
   subcontent: "SC제일은행과 JA Korea가 함께하는 미래 여성리더를 위한 자립심 향상 프로그램 'Goal'<br>- 강사단 모집 -"
 	},
   {
+    name:"모집완료",
 	  title:"[모집] TTBiz 2022 프로그램 참가자 모집",
   s_src: "img6.jpg",
 			 b_src: "img6_b.jpg",
@@ -70,6 +76,7 @@ export default [
   subcontent: "TTBiz 2022 프로그램 참가자 모집<br>국제 비영리 청소년 교육단체인 JA Korea(제이에이코리아)는 JA Japan, JA Philippines, JA Singapore와 ‘JA TTBiz’ 프로그램을 운영 합니다.<br>국제 비즈니스와 관광을 주제로 한국, 일본, 필리핀, 싱가포르의 4개국 학생들이 한 팀을 이루어 관광 상품을 개발하고 발표하는 과정을 통해 국제적 교류와<br>글로벌 리더십을 고취하고자 하는 본 프로그램에 고등학생들의 많은 지원 바랍니다."
 	},
   {
+    name:"모집완료",
 	  title:"[모집] 대학생 경제교육봉사단 UJAT 29기 모집",
   s_src: "img7.jpg",
 			 b_src: "img7_b.jpg",
@@ -81,6 +88,7 @@ export default [
   subcontent: "JA Korea 대학생 경제교육봉사단 UJAT 29기 모집<br>JA Korea에서 초등학생 대상 경제금융교육 프로그램에 참여할 '대학생 경제교육봉사단'을 모집합니다.  관심있는 학생들의 많은 참여 바랍니다. "
 	},
   {
+    name:"모집완료",
 	  title:"[모집] 2022 FLEX 자립준비청년 프로그램 참여자 모집",
   s_src: "img8.jpg",
 			 b_src: "img8.jpg",
@@ -92,6 +100,7 @@ export default [
   subcontent: "2022 FLEX 자립준비청년 프로그램 참여자 모집<br>국제 비영리 청소년 교육기관 JA Korea(제이에이코리아)에서는 HSBC와 함께 자립준비 청소년의 경제적 독립과<br>사회진출을 지원하는 ‘FLEX’ 프로그램 참가 대상자를 모집합니다.<br> 미래 세대의 성장을 지원하는 본 프로그램에 많은 신청 바랍니다. "
 	},
   {
+    name:"모집완료",
 	  title:"[모집마감] 세계 3대 신용평가사 무디스와의 점심특강 대학생 모집",
   s_src: "img9.jpg",
 			 b_src: "img9_b.jpg",
@@ -103,6 +112,7 @@ export default [
   subcontent:"",
 	},
   {
+    name:"모집완료",
 	  title:"[추가모집] 외국계 금융 및 미디어 기업 취업에 관심있는 대학생 참가자 모집(온라인 진행)",
   s_src: "img10.jpg",
 			 b_src: "img10_b.jpg",

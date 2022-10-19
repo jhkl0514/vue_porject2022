@@ -11,15 +11,23 @@
           }"
           :navigation="true"
           :modules="modules"
-          class="mySwiper"
+          v-bind="swiperOptions"          
+          class="mySwiper"          
         >
+        <!-- v-bind="swiperOptions" : Pagination, Navigation 바인드해줌 -->
           <swiper-slide v-for="(item, i) in Main02Slide" :key="i">
             <div  class="innerItem video mb-3 mb-lg-0">
               <!-- {{swiperView[0].subtitle}} -->
               <div class="video_txt col-md-6">
                 <h3 v-html="item.mainTitle"></h3>
-                <p  v-html="item.subtitle"></p>
+                <p  v-html="item.subtitle" class="mb-5"></p>
+                <div class="btnMore">
+                  <a href="#" class="btnMore01">
+                    <span>자세히 보기</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
               </div>
+              </div>              
 
               <div class="video01 col-md-6" :class="`video_${i}`">
                 <video  autoplay  muted loop playsinline  preload="metadata" style="" class="img-fluid">
@@ -30,8 +38,8 @@
           </swiper-slide>
         </swiper>
         <div class="btnWrap">
-          <div class="prev">이전</div>
-          <div class="next">다음</div>
+          <div class="prev"><i class="fa-solid fa-angle-left"></i></div>
+          <div class="next"><i class="fa-solid fa-angle-right"></i></div>
         </div>
       </div>
     </div>
@@ -70,8 +78,8 @@ export default {
           prevEl:'.Main02Slide .prev',
         },
         pagination:{
-          // clickable:true
-          type:'fraction'
+          clickable:true
+          // type:'fraction'
           }
       }
     };
@@ -115,7 +123,7 @@ export default {
         z-index:1;       
         width:67%;
         font-family: 'NanumSquare';  
-        color: #285E76;     
+        color: #285E76;        
                    
         strong{
           font-size:66px; 
@@ -127,24 +135,67 @@ export default {
         p {
           font-weight: 700;
           font-size: 18px;
-          line-height: 22px;          
+          line-height: 22px;             
         }
       }
     }
+    
+    
     .btnWrap{
-      position: absolute;
+      _position: absolute;
       display: flex;
-      bottom: 20px;
+      _bottom: 20px;
       z-index: 10;
       gap:10px;
       left: calc( 50% + 300px);
       .next,.prev{
-        padding: 5px 10px;
-        background: rgba(0,0,0,0.3);
-        border-radius: 10px;
-        color: white;
+            color: #333;
+            opacity: .4;
+            font-size: 20px;
+            transition: .3s;
+        // padding: 5px 10px;
+        // background: rgba(0,0,0,0.3);
+        // border-radius: 10px;
+        // color: white;
         cursor:pointer;
       }
+    }
+    .btnMore{
+      position: absolute;      
+      left:3px;
+      a.btnMore01{
+        padding: 20px 35px;
+        border-radius: 40px;
+        overflow: hidden;
+        display: inline-block;
+        background: #fff;       
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+        span {
+          font-family: 'NanumSquare';         
+          font-size: 17px;
+          font-weight: 700;
+          padding-right:48px ;       
+        }       
+      }
+      a.btnMore01:hover{        
+          box-shadow: 0 0 17px 6px rgba(0, 0, 0, 0);                  
+          color: #fff;
+          background-image: linear-gradient( -45deg,#00a0af,#00c0ca, #008b9c,
+        #28708b,#285f74, #22404d,#285f74,#28708b,
+        #008b9c,#00c0ca,#00a0af) !important;
+          animation: animate 1s linear infinite;
+          opacity:1;       
+               
+          @keyframes animate {
+            100%{opacity:1;
+            background-image: linear-gradient( -45deg,#00a0af,#00c0ca, #008b9c,
+          #28708b,#285f74, #22404d,#285f74,#28708b,
+          #008b9c,#00c0ca,#00a0af) !important;  }
+          }         
+      }                 
+     
+      
     }
   }
 }
