@@ -1,11 +1,11 @@
 <template>
   <MainMenu></MainMenu>
   <MainSlide  v-bind:Main02Slide="Main02Slide"></MainSlide>
-  <MainBanner></MainBanner>
+  <MainBanner v-bind:Main03Banner="Main03Banner"></MainBanner>
   <MainEducation></MainEducation>
-  <MainGraph></MainGraph>
+  <MainGraph></MainGraph> 
+  <MainNotice :Main04Notice="Main04Notice" :Main05Story="Main05Story" :Main06News="Main06News"></MainNotice>
   <MainNews></MainNews>
-  <MainNotice></MainNotice>
   <MainMovie></MainMovie>
   <MainSponsor></MainSponsor>
   <MainNewsletter></MainNewsletter>
@@ -27,6 +27,10 @@ import MainNewsletter from "@/components/Main10Newsletter.vue"
 import MainFooter from "@/components/Main11Footer.vue"
 
 import Main02Slide from "@/data/01mainSlide.js";
+import Main03Banner from "@/data/02iconBanner.js";
+import Main04Notice from "@/data/04notice.js"
+import Main05Story from "@/data/05story.js"
+import Main06News from "@/data/06news.js"
 
 
 export default {
@@ -47,6 +51,10 @@ export default {
   data(){
     return {
     Main02Slide:Main02Slide,
+    Main03Banner:Main03Banner,
+    Main04Notice:Main04Notice,
+    Main05Story:Main05Story,
+    Main06News:Main06News
     }
   }
 }
@@ -55,9 +63,9 @@ export default {
 <style>
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
   *{margin: 0;padding: 0; }
-  body{font-family: 'NanumSquare',san-serif; font-size:17px; line-height:1.5;}
+  body{font-family: 'NanumSquare',san-serif !important; font-size:17px; line-height:1.5; }
   ul,li{list-style: none;}
-  a:link,a:visited{text-decoration: none;color: #333;}
+  a:link,a:visited {text-decoration: none; color: #333 !important;}
   .container{width: 1280px;margin: 0 auto;}
   .nanumsquare {font-family: 'NanumSquare', sans-serif !important;}
   .fontL{font-weight: 300;}
