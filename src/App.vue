@@ -5,7 +5,7 @@
   <MainEducation></MainEducation>
   <MainGraph></MainGraph> 
   <MainNotice :Main04Notice="Main04Notice" :Main05Story="Main05Story" :Main06News="Main06News"></MainNotice>
-  <MainNews></MainNews>
+  <MainNews :Main07notice="Main07notice" :Main08result="Main08result"></MainNews>
   <MainMovie></MainMovie>
   <MainSponsor></MainSponsor>
   <MainNewsletter></MainNewsletter>
@@ -31,6 +31,8 @@ import Main03Banner from "@/data/02iconBanner.js";
 import Main04Notice from "@/data/04notice.js"
 import Main05Story from "@/data/05story.js"
 import Main06News from "@/data/06news.js"
+import Main07notice from "@/data/07notice.js"
+import Main08result from "@/data/08result.js"
 
 
 export default {
@@ -54,7 +56,10 @@ export default {
     Main03Banner:Main03Banner,
     Main04Notice:Main04Notice,
     Main05Story:Main05Story,
-    Main06News:Main06News
+    Main06News:Main06News,
+    Main07notice:Main07notice,
+    Main08result:Main08result,
+
     }
   }
 }

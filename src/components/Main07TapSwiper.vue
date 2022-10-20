@@ -1,8 +1,6 @@
 <template>
   <div class="TapSwiper col">
       <swiper
-        ref="{swiperRef}"
-        :navigation="true"
          v-bind="swiperOptions1"
         :modules="modules1"
         class="mySwiper1"
@@ -26,8 +24,8 @@
         </swiper-slide>      
       </swiper>
       <div class="btnWrap">
-          <div class="prev"><i class="fa-solid fa-angle-left"></i></div>
-          <div class="next"><i class="fa-solid fa-angle-right"></i></div>
+          <div class="prev"><i class="fa-solid fa-arrow-left-long"></i></div>
+          <div class="next"><i class="fa-solid fa-arrow-right-long"></i></div>
       </div>
   </div>
 
@@ -64,8 +62,8 @@ export default {
         observer: true,
         observeParents: true,
         navigation:{
-          nextEl:'.Main04Notice .next',
-          prevEl:'.Main04Notice .prev',
+          nextEl:'.TapSwiper .next',
+          prevEl:'.TapSwiper .prev',
         },
       }
     };
@@ -74,10 +72,11 @@ export default {
 </script>
 <style lang="scss">
 .TapSwiper{
-    padding: 0px 40px;
+    padding: 20px 80px;
     position: relative;    
     .swiper-slide{      
-        height: 400px;        
+        height: 400px; 
+        margin: 0px;       
         &.Main04Notice{
             // background: #eee;
         }
@@ -93,7 +92,7 @@ export default {
             color: #fff;
             display: block;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 14px;
             display:inline-block;
             padding: 8px 15px;
             margin: 1px;
@@ -126,16 +125,22 @@ export default {
     }
     .btnWrap{     
       display: flex;
-      z-index: 10;
+      z-index: 20;
       gap:10px;
       left: calc( 50% + 300px);
       .next,.prev{
             position: absolute;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 28px;
             top: 120px;
-            color: #333;
-            opacity: .4;
-            font-size: 50px;
-            transition: .3s;        
+            color: #149197;
+            width: 65px;
+            height: 56px;       
+            font-size: 18px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;   
             cursor:pointer;
       }
       .prev{
