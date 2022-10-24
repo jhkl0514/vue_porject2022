@@ -7,7 +7,7 @@
   <MainNotice :Main04Notice="Main04Notice" :Main05Story="Main05Story" :Main06News="Main06News"></MainNotice>
   <MainNews :Main07notice="Main07notice" :Main08result="Main08result"></MainNews>
   <MainMovie></MainMovie>
-  <MainSponsor></MainSponsor>
+  <MainSponsor :Main09support="Main09support"></MainSponsor>
   <MainNewsletter></MainNewsletter>
   <MainFooter></MainFooter>
 
@@ -33,6 +33,7 @@ import Main05Story from "@/data/05story.js"
 import Main06News from "@/data/06news.js"
 import Main07notice from "@/data/07notice.js"
 import Main08result from "@/data/08result.js"
+import Main09support from "@/data/09support.js"
 
 
 export default {
@@ -46,7 +47,6 @@ export default {
     MainNotice,
     MainMovie,
     MainSponsor,
-    MainSponsor,
     MainNewsletter,
     MainFooter,
   },
@@ -59,6 +59,7 @@ export default {
     Main06News:Main06News,
     Main07notice:Main07notice,
     Main08result:Main08result,
+    Main09support:Main09support,
 
     }
   }
