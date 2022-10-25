@@ -54,7 +54,7 @@ export default {
   ],
   setup() {
     return {
-      modules: [Pagination, Navigation],
+      modules1: [Pagination, Navigation],
       swiperOptions1:{
         slidesPerView:3,
         spaceBetween:30,
@@ -62,8 +62,8 @@ export default {
         observer: true,
         observeParents: true,
         navigation:{
-          nextEl:'.TapSwiper .next',
-          prevEl:'.TapSwiper .prev',
+          nextEl:'.btnWrap .next',
+          prevEl:'.btnWrap .prev',
         },
       }
     };

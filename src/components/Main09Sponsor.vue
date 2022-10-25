@@ -12,19 +12,18 @@
                     <i class="fa-solid fa-arrow-right-long"></i>
                   </a>
           </div>
-          <div class="paging">
-            <i class="fa-solid fa-arrow-left-long"></i> 
-            <i class="fa-solid fa-arrow-right-long"></i>
+          <div class="paging d-flex gap-3 ">  
+             <div class="prev"><i class="fa-solid fa-arrow-left-long"></i></div>
+             <div class="next"><i class="fa-solid fa-arrow-right-long"></i></div>            
         </div>
         </div>
 
-        <div class="col-md-8">
-          <swiper
-            
-            :modules="modules1"
-            v-bind="swiperOptions1" 
+        <div class="col-md-8" style="height:400px">
+          <swiper            
+            :modules="modules2"
+            v-bind="swiperOptions2" 
             class="mySwiper03"
-          >
+          > 
             <swiper-slide  v-for="(item, i) in Main09support" :key="i">
               <div class="wrapImgBg">
               <div class="wrapImg">        
@@ -48,10 +47,11 @@ import "swiper/css";
 
 import "swiper/css/grid";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 
 // import required modules
-import { Grid, Pagination } from "swiper";
+import { Grid, Pagination, Navigation } from "swiper";
 
 export default {
   components: {
@@ -60,17 +60,23 @@ export default {
   },
   setup() {
     return {
-      modules1: [Grid, Pagination],
-       swiperOptions1:{
+      modules2: [Grid, Pagination, Navigation],
+       swiperOptions2:{
         slidesPerView:3,
         grid:{
-              rows: 1,
+              rows: 3,
             },
-        spaceBetween:30,
+        spaceBetween:10,
         pagination:{
               clickable: true,
-            }
+            },
+        navigation:{
+          nextEl:'.paging .next',
+          prevEl:'.paging .prev',
+        },   
       }
+
+  
     };   
   },
    props :["Main09support"],
@@ -78,6 +84,17 @@ export default {
 </script>
 <style lang="scss">
 .Main09Sponsor{
+  margin-bottom: 240px;
+  .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ .swiper-slide {
+  height: calc((100% - 10%) / 3) !important;
+ }
+
   .txt{
     p{
       font-weight: 600;
@@ -130,7 +147,7 @@ export default {
       margin-top: 130px;
       color: #C9C9C9;
       font-size: 30px;
-      font-weight: 200;
+      font-weight: 100;
     }
 
   }
