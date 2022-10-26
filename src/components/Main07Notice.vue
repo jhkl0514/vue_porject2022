@@ -7,9 +7,9 @@
       <div class="d-flex row mb-5">   
         <div class="col-6 col-md-3"><h2>기관소식</h2></div>
         <div class="NoticeTitle d-flex col-6  col-md-3">
-          <div class="tab" @click="tab=1" :class="{active:tab==1}">공지사항</div>
-          <div class="tab" @click="tab=2" :class="{active:tab==2}">스토리</div>
-          <div class="tab" @click="tab=3" :class="{active:tab==3}">언론보도</div>
+          <div class="tab col col-md-4" @click="tab=1" :class="{active:tab==1}">공지사항</div>
+          <div class="tab col col-md-4" @click="tab=2" :class="{active:tab==2}">스토리</div>
+          <div class="tab col col-md-4" @click="tab=3" :class="{active:tab==3}">언론보도</div>
         </div>
       </div>
 

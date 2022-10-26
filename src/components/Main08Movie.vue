@@ -95,20 +95,14 @@ export default {
         }       
       }
       a.btnMore01:hover{        
-          box-shadow: 0 0 17px 6px rgba(0, 0, 0, 0);                  
-          color: #fff;
-          background-image: linear-gradient( -45deg,#00a0af,#00c0ca, #008b9c,
-        #28708b,#285f74, #22404d,#285f74,#28708b,
-        #008b9c,#00c0ca,#00a0af) !important;
-          animation: animate 1s linear infinite;
-          opacity:1;       
-               
-          @keyframes animate {
-            100%{opacity:1;
-            background-image: linear-gradient( -45deg,#00a0af,#00c0ca, #008b9c,
-          #28708b,#285f74, #22404d,#285f74,#28708b,
-          #008b9c,#00c0ca,#00a0af) !important;  }
-          }         
+          box-shadow: 0 0 17px 6px rgba(0, 0, 0, 0); 
+          background: linear-gradient(90deg, #00BDC8 2.33%, #008B9C 100%) !important;
+          span{
+            color:#fff;
+          }
+          i{
+            color:#fff;
+          }             
       }  
     }
 
@@ -137,6 +131,26 @@ export default {
   .mainvdo{
     width: auto;
     height: 100%;
+  }
+}
+
+$small: 768px;
+@media screen and (max-width: $small) {
+  .txtWrap{
+    padding: 50% 8% !important; 
+
+  .title{
+      .video-title{     
+      font-size: 20px !important; 
+      padding: 0 5px !important; 
+   
+      }
+      .video-subtitle{
+        font-weight: 800;
+        font-size: 35px !important;
+        line-height: 80px !important;
+      }
+    }
   }
 }
 </style>

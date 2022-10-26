@@ -13,8 +13,8 @@
                   </a>
           </div>
           <div class="paging d-flex gap-3 ">  
-             <div class="prev"><i class="fa-solid fa-arrow-left-long"></i></div>
-             <div class="next"><i class="fa-solid fa-arrow-right-long"></i></div>            
+             <div class="prev pointer"><i class="fa-solid fa-arrow-left-long"></i></div>
+             <div class="next pointer"><i class="fa-solid fa-arrow-right-long"></i></div>            
         </div>
         </div>
 
@@ -83,6 +83,17 @@ export default {
 };
 </script>
 <style lang="scss">
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
+    _display: inline-block;
+    _border-radius: 50%;
+    _background: var(--swiper-pagination-bullet-inactive-color,#000);
+    _opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+}
+:root {
+    --swiper-theme-color: #285f74;
+}
 .Main09Sponsor{
   margin-bottom: 240px;
   .swiper {
@@ -126,20 +137,14 @@ export default {
         }       
       }
       a.btnMore01:hover{        
-          box-shadow: 0 0 17px 6px rgba(0, 0, 0, 0);                  
-          color: #fff;
-          background-image: linear-gradient( -45deg,#00a0af,#00c0ca, #008b9c,
-        #28708b,#285f74, #22404d,#285f74,#28708b,
-        #008b9c,#00c0ca,#00a0af) !important;
-          animation: animate 1s linear infinite;
-          opacity:1;       
-               
-          @keyframes animate {
-            100%{opacity:1;
-            background-image: linear-gradient( -45deg,#00a0af,#00c0ca, #008b9c,
-          #28708b,#285f74, #22404d,#285f74,#28708b,
-          #008b9c,#00c0ca,#00a0af) !important;  }
-          }         
+          box-shadow: 0 0 17px 6px rgba(0, 0, 0, 0); 
+          background: linear-gradient(90deg, #00BDC8 2.33%, #008B9C 100%) !important;
+          span{
+            color:#fff;
+          }
+          i{
+            color:#fff;
+          }             
       }  
     }
 
@@ -148,6 +153,12 @@ export default {
       color: #C9C9C9;
       font-size: 30px;
       font-weight: 100;
+      .pointer{
+        cursor: pointer;
+        :hover{
+          color: #222;
+        }
+      }
     }
 
   }

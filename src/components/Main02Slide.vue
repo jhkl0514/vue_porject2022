@@ -179,24 +179,51 @@ export default {
         }       
       }
       a.btnMore01:hover{        
-          box-shadow: 0 0 17px 6px rgba(0, 0, 0, 0);                  
-          color: #fff;
-          background-image: linear-gradient( -45deg,#00a0af,#00c0ca, #008b9c,
-        #28708b,#285f74, #22404d,#285f74,#28708b,
-        #008b9c,#00c0ca,#00a0af) !important;
-          animation: animate 1s linear infinite;
-          opacity:1;       
-               
-          @keyframes animate {
-            100%{opacity:1;
-            background-image: linear-gradient( -45deg,#00a0af,#00c0ca, #008b9c,
-          #28708b,#285f74, #22404d,#285f74,#28708b,
-          #008b9c,#00c0ca,#00a0af) !important;  }
-          }         
-      }                 
-     
-      
+          box-shadow: 0 0 17px 6px rgba(0, 0, 0, 0); 
+          background: linear-gradient(90deg, #00BDC8 2.33%, #008B9C 100%) !important;
+          span{
+            color:#fff;
+          }
+          i{
+            color:#fff;
+          }             
+      }  
     }
+  } 
+  
+}
+$small: 768px;
+@media screen and (max-width: $small) {
+  .mySwiper{
+    .video_txt {
+      padding: 10px;
+      position: absolute;
+      top:20px;
+      width:100% !important;                                      
+        strong{
+          font-size:40px !important;                  
+        }
+        p{
+          font-size:14px !important; 
+        }
+       
+      }
+    .btnMore{ 
+      position: absolute;
+      top:550px;   
+      a.btnMore01{
+        padding: 10px 20px !important;  
+        span {
+          font-family: 'NanumSquare';         
+          font-size: 12px  !important;  
+          font-weight: 700;
+          padding-right:48px ;       
+        }       
+      }  
+    }  
   }
 }
+
+
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="TapSwiper col">
+  <div class="TapSwiper ">
       <swiper
          v-bind="swiperOptions1"
         :modules="modules1"
@@ -56,8 +56,15 @@ export default {
     return {
       modules1: [Pagination, Navigation],
       swiperOptions1:{
-        slidesPerView:3,
-        spaceBetween:30,
+        slidesPerView:1,
+        spaceBetween:0,
+         breakpoints: {
+          // 1280px 보다 클 경우
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+         },
         loop:true,
         observer: true,
         observeParents: true,
@@ -156,6 +163,15 @@ export default {
         z-index: 10;
       }
     }
-}    
+}
+// $small: 768px;
+// @media screen and (max-width: $small) {
+//   .TapSwiper{ 
+//     .swiper-slide{
+//       background: pink; 
+//        width: 500px;          
+//     }        
+// }
+// }
 </style>
   

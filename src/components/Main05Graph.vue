@@ -4,7 +4,7 @@
       <div class="row col">
 
       <div class="col col-md-4 d-flex align-items-center">
-        <div class="graph-img ">
+        <div class="graph-img mt-5 mt-md-0 ">
           <img src="../assets/main-number-1.jpg" alt="" />
         </div>
       </div>
