@@ -68,9 +68,7 @@ export default {
           height: 4px; 
           background: #365A66;                   
         } 
-         }       
-        
-         
+         }   
       }
     }
 
