@@ -28,6 +28,7 @@ export default {
 
 <style lang="scss">
 .Main03Banner{
+  margin-bottom: 200px;
   .quick-li{
     display: flex;
     justify-content: space-between;

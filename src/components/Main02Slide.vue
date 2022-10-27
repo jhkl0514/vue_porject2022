@@ -5,6 +5,8 @@
         <swiper
           :slidesPerView="1"
           :spaceBetween="30"
+          :effect="'fade'"
+          :fadeEffect="{crossFade: true,}"
           :loop="true"
           :pagination="{
             clickable: true,
@@ -14,6 +16,7 @@
           v-bind="swiperOptions"          
           class="mySwiper"          
         >
+        <!-- :fadeEffect="{crossFade: true,}" ==> slide 넘길때 cross로 투명도 처리됨 -->
         <!-- v-bind="swiperOptions" : Pagination, Navigation 바인드해줌 -->
           <swiper-slide v-for="(item, i) in Main02Slide" :key="i">
             <div  class="innerItem video mb-3 mb-lg-0">
@@ -37,8 +40,8 @@
             </div>
           </swiper-slide>
         </swiper>
-        <div class="btnWrap">
-          <div class="prev"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="btnWrap gap-5">
+          <div class="prev"><i class="fa-solid fa-angle-left"></i></div>       
           <div class="next"><i class="fa-solid fa-angle-right"></i></div>
         </div>
       </div>
@@ -55,9 +58,10 @@ import "swiper/css";
 
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, EffectFade } from "swiper";
 
 //swiper data
 // import sData from "@/data/01mainSlide.js"
@@ -69,7 +73,7 @@ export default {
   },
   setup() {
     return {
-      modules: [Pagination, Navigation],
+      modules: [Pagination, Navigation, EffectFade],
       // swiperView:sData,
       swiperOptions:{
         loop:true,
@@ -78,7 +82,7 @@ export default {
           prevEl:'.Main02Slide .prev',
         },
         pagination:{
-          clickable:true
+          clickable:true,
           // type:'fraction'
           }
       }
@@ -89,6 +93,13 @@ export default {
 };
 </script>
 <style lang="scss">
+.swiper-horizontal>.swiper-pagination-bullets{
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width:7.5%;
+  gap:7px;
+}
 .wrap {
   &.Main02Slide {
     position: relative;
@@ -144,8 +155,8 @@ export default {
     .btnWrap{
       _position: absolute;
       display: flex;
-      _bottom: 20px;
-      z-index: 10;
+      _bottom: 30px;
+      z-index: 0;
       gap:10px;
       left: calc( 50% + 300px);
       .next,.prev{
