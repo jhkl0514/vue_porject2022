@@ -2,7 +2,7 @@
   <MainMenu></MainMenu>
   <MainSlide  v-bind:Main02Slide="Main02Slide"></MainSlide>
   <MainBanner v-bind:Main03Banner="Main03Banner"></MainBanner>
-  <MainEducation></MainEducation>
+  <!-- <MainEducation></MainEducation> -->
   <MainGraph></MainGraph> 
   <MainNotice :Main04Notice="Main04Notice" :Main05Story="Main05Story" :Main06News="Main06News"></MainNotice>
   <MainNews :Main07notice="Main07notice" :Main08result="Main08result"></MainNews>

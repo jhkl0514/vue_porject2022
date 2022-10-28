@@ -53,11 +53,7 @@ export default {
     position: absolute;
     top:0;
     left:0;
-    padding: 15% 8%;
-    _display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    padding: 15% 8%;   
     
     .title{
       .video-title{
