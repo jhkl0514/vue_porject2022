@@ -46,12 +46,12 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 
 import "swiper/css/grid";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 
 // import required modules
-import { Grid, Pagination, Navigation } from "swiper";
+import { Grid, Navigation } from "swiper";
 
 export default {
   components: {
@@ -60,7 +60,7 @@ export default {
   },
   setup() {
     return {
-      modules2: [Grid, Pagination, Navigation],
+      modules2: [Grid,  Navigation],
        swiperOptions2:{
         slidesPerView:3,
         grid:{
